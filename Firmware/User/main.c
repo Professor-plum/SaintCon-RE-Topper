@@ -7,35 +7,89 @@
  */
 #include "main.h"
 #include "py32f0xx_bsp_clock.h"
+#include "py32f0xx_bsp_printf.h"
 
 static void APP_PWMChannelConfig(void);
 static void APP_TIM1BaseConfig(void);
 static void APP_I2CConfig(void);
 
+int touch = 0;
+int ptn=0;
+
+#define SENSE_PIN LL_GPIO_PIN_6
+#define LOAD_PIN  LL_GPIO_PIN_7
+
+#define MAX_COUNT 1024
+
+int touch_sense() {
+  int count1, count2;
+
+  LL_GPIO_ResetOutputPin(GPIOA, SENSE_PIN);
+  LL_GPIO_SetPinMode(GPIOA, SENSE_PIN, LL_GPIO_MODE_OUTPUT);
+  LL_GPIO_SetPinOutputType(GPIOA, SENSE_PIN, LL_GPIO_OUTPUT_PUSHPULL);
+  LL_GPIO_SetOutputPin(GPIOA, LOAD_PIN);
+
+  LL_GPIO_SetPinMode(GPIOA, SENSE_PIN, LL_GPIO_MODE_INPUT);
+
+  for (count1=0; count1<MAX_COUNT; ++count1) {
+    if ((LL_GPIO_ReadInputPort(GPIOA) & SENSE_PIN)>0)
+      break;
+  }
+
+  LL_GPIO_SetPinMode(GPIOA, SENSE_PIN, LL_GPIO_MODE_OUTPUT);
+  LL_GPIO_SetPinOutputType(GPIOA, SENSE_PIN, LL_GPIO_OUTPUT_PUSHPULL);
+  LL_GPIO_SetOutputPin(GPIOA, SENSE_PIN);
+  LL_GPIO_ResetOutputPin(GPIOA, LOAD_PIN);
+
+  LL_GPIO_SetPinMode(GPIOA, SENSE_PIN, LL_GPIO_MODE_INPUT);
+
+  for (count2=0; count2<MAX_COUNT; ++count2) {
+    if ((LL_GPIO_ReadInputPort(GPIOA) & SENSE_PIN) == 0)
+      break;
+  }
+
+  return count1 + count2;
+}
+
 int main(void)
 {
   BSP_RCC_HSI_24MConfig();
-
   //BSP_USART_Config(115200);
-  //printf("TIM1 PWM Demo\r\nClock: %ld \r\n", SystemCoreClock);
+  //printf("Touch\r\nClock: %ld \r\n", SystemCoreClock);
 
   APP_TIM1BaseConfig();
   APP_PWMChannelConfig();
   
-  //LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
-  //LL_GPIO_SetPinMode(GPIOA, LL_GPIO_PIN_1, LL_GPIO_MODE_OUTPUT);
-
+  LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
+  LL_GPIO_SetPinMode(GPIOA, LOAD_PIN, LL_GPIO_MODE_OUTPUT);
+  LL_GPIO_SetPinOutputType(GPIOA, LOAD_PIN, LL_GPIO_OUTPUT_PUSHPULL);
+  
   APP_I2CConfig();
 
   while (1)
   {
+    int tally=0;
+    for (int i=0; i<30; ++i) {
+      tally += touch_sense();
+    }
+
+    printf("tally: %d \r\n", tally);
+    if (tally > 2000) {
+      if (touch == 0) {
+        ptn= ((ptn + 1) % 5);
+      }
+      touch = 100;
+    }
+    else if (touch > 0) {
+      touch--;
+    }
     //LL_GPIO_TogglePin(GPIOA, LL_GPIO_PIN_1);
     //LL_mDelay(500);
   }
 }
 
-const uint16_t heart_pat[48] ={500,990,600,300,100,0,0,0,500,990,700,500,400,300,250,200,150,100,50,0,0,0,0,0,
-  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+const uint16_t heart_pat[48] ={500,990,600,300,100,0,0,500,990,700,500,400,300,250,200,150,100,50,0,0,0,0,0,
+  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
 const uint16_t sineLookupTable[] = {
 0x1f4, 0x200, 0x20c, 0x218, 0x224, 0x231, 0x23d, 0x249, 0x255, 0x261, 0x26d, 0x279, 0x284, 0x290, 0x29c, 0x2a7, 0x2b3, 0x2be, 0x2c9, 0x2d4, 0x2df, 0x2ea, 0x2f4, 0x2ff, 0x309, 0x313, 0x31d, 0x327, 0x330, 0x33a, 0x343, 0x34c,
@@ -47,11 +101,35 @@ const uint16_t sineLookupTable[] = {
 0x00, 0x00, 0x01, 0x01, 0x02, 0x04, 0x05, 0x07, 0x0a, 0x0c, 0x0f, 0x12, 0x16, 0x19, 0x1d, 0x21, 0x26, 0x2b, 0x30, 0x35, 0x3b, 0x41, 0x47, 0x4d, 0x54, 0x5b, 0x62, 0x6a, 0x71, 0x79, 0x81, 0x8a,
 0x92, 0x9b, 0xa4, 0xad, 0xb7, 0xc0, 0xca, 0xd4, 0xde, 0xe8, 0xf3, 0xfd, 0x108, 0x113, 0x11e, 0x129, 0x134, 0x140, 0x14b, 0x157, 0x163, 0x16e, 0x17a, 0x186, 0x192, 0x19e, 0x1aa, 0x1b6, 0x1c3, 0x1cf, 0x1db, 0x1e7};
 
-int heart_idx=0;
+const uint16_t saw_pat[22] = {
+  0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 999, 999, 900, 800, 700, 600, 500, 400, 300, 200, 100, 0
+};
+
+int rseed = 13;
+uint16_t rand() {
+  rseed = rseed * 75 + 74;
+  return rseed;
+}
+
+int idx=0;
 void APP_TIM1UpdateCallback(void)
 {
-  //LL_GPIO_TogglePin(GPIOA, LL_GPIO_PIN_1);
-  LL_TIM_OC_SetCompareCH4(TIM1, sineLookupTable[(++heart_idx) % 256]);
+  //LL_GPIO_TogglePin(GPIOA, LL_GPIO_PIN_6);
+  if (ptn == 0) {
+    LL_TIM_OC_SetCompareCH4(TIM1, sineLookupTable[(idx++*2) % 256]);
+  }
+  else if (ptn == 1) {
+    LL_TIM_OC_SetCompareCH4(TIM1, heart_pat[(idx++/2) % 48]);
+  }
+  else if (ptn == 2){
+    LL_TIM_OC_SetCompareCH4(TIM1, saw_pat[(idx++) % 22]);
+  }
+  else if (ptn == 3){
+    LL_TIM_OC_SetCompareCH4(TIM1, 200 + (rand()%600));
+  }
+  else {
+    LL_TIM_OC_SetCompareCH4(TIM1, 0);
+  }
 }
 
 
@@ -113,8 +191,8 @@ static void APP_PWMChannelConfig(void)
   TIM_OC_Initstruct.OCState       = LL_TIM_OCSTATE_ENABLE;
   TIM_OC_Initstruct.OCPolarity    = LL_TIM_OCPOLARITY_HIGH;
   TIM_OC_Initstruct.OCIdleState   = LL_TIM_OCIDLESTATE_LOW;
-
   TIM_OC_Initstruct.CompareValue  = 999;
+
   LL_TIM_OC_Init(TIM1,LL_TIM_CHANNEL_CH4, &TIM_OC_Initstruct);
 }
 

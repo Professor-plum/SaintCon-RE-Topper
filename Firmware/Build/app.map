@@ -10,16 +10,20 @@ Archive member included to satisfy reference by file (symbol)
                               /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o (memset)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
                               ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_usart.o (__aeabi_uidiv)
+/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+                              ./Build/User/main.o (__aeabi_idivmod)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
                               /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-errno.o)
                               ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o (__errno)
+/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+                              ./Build/User/main.o (printf)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-setvbuf.o)
                               ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o (setvbuf)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
                               /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-setvbuf.o) (_fflush_r)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
-                              /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-setvbuf.o) (__sinit)
+                              /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o) (__sinit)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
                               /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o) (_fwalk)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
@@ -32,26 +36,48 @@ Archive member included to satisfy reference by file (symbol)
                               /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-setvbuf.o) (_free_r)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
                               /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o) (_malloc_r)
+/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+                              /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o) (_vfprintf_r)
+/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                              /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o) (_printf_i)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
                               /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o) (_sbrk_r)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
                               /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o) (__sread)
+/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+                              /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o) (__swbuf_r)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
                               /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o) (_write_r)
+/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+                              /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o) (__swsetup_r)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
                               /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o) (_close_r)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
                               /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o) (_fstat_r)
+/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+                              /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o) (__sfvwrite_r)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
                               /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o) (_isatty_r)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
                               /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o) (_lseek_r)
+/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memchr-stub.o)
+                              /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o) (memchr)
+/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+                              /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o) (memcpy)
+/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memmove.o)
+                              /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o) (memmove)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
                               /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o) (__malloc_lock)
+/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)
+                              /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o) (_realloc_r)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
                               /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o) (_read_r)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
                               /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o) (errno)
+/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-msizer.o)
+                              /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o) (_malloc_usable_size_r)
+/opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+                              /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o) (__gnu_thumb1_case_shi)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(sbrk.o)
                               /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o) (_sbrk)
 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
@@ -81,14 +107,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
- .data._impure_ptr
-                0x0000000000000000        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
- .data.impure_data
-                0x0000000000000000       0x60 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
- .rodata._global_impure_ptr
-                0x0000000000000000        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
- .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
@@ -100,8 +118,6 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 ./Build/User/main.o
  .text.APP_ErrorHandler
                 0x0000000000000000        0x2 ./Build/User/main.o
- .rodata.heart_pat
-                0x0000000000000000       0x60 ./Build/User/main.o
  .text          0x0000000000000000        0x0 ./Build/User/py32f0xx_it.o
  .data          0x0000000000000000        0x0 ./Build/User/py32f0xx_it.o
  .bss           0x0000000000000000        0x0 ./Build/User/py32f0xx_it.o
@@ -462,32 +478,10 @@ Discarded input sections
                 0x0000000000000000       0x14 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
  .text.BSP_USART_Config
                 0x0000000000000000      0x15c ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
- .text.__io_putchar
-                0x0000000000000000       0x20 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
- .text.__io_getchar
-                0x0000000000000000       0x18 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
- .text._write   0x0000000000000000       0x1c ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
- .text._read    0x0000000000000000       0x1c ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
- .text._isatty  0x0000000000000000       0x16 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
- .text._close   0x0000000000000000       0x18 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
- .text._lseek   0x0000000000000000       0x10 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
- .text._fstat   0x0000000000000000       0x1a ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
  .text._getpid  0x0000000000000000       0x10 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
  .text._kill    0x0000000000000000       0x10 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
  .rodata.HEX_TABLE
                 0x0000000000000000       0x10 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
- .debug_info    0x0000000000000000     0x1cb6 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
- .debug_abbrev  0x0000000000000000      0x366 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
- .debug_loc     0x0000000000000000      0x8e0 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
- .debug_aranges
-                0x0000000000000000       0x98 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
- .debug_ranges  0x0000000000000000       0x88 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
- .debug_line    0x0000000000000000      0x961 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
- .debug_str     0x0000000000000000      0xae5 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
- .comment       0x0000000000000000       0x4a ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
- .debug_frame   0x0000000000000000      0x194 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
- .ARM.attributes
-                0x0000000000000000       0x2c ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
  .text          0x0000000000000000        0x0 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
  .data          0x0000000000000000        0x0 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
  .bss           0x0000000000000000        0x0 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
@@ -534,15 +528,18 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/gcc/startup_py32f002a.o
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+ .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-errno.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-errno.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-errno.o)
- .text.__errno  0x0000000000000000        0xc /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-errno.o)
- .debug_frame   0x0000000000000000       0x20 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-errno.o)
- .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-errno.o)
+ .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+ .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+ .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+ .text._printf_r
+                0x0000000000000000       0x28 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-setvbuf.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-setvbuf.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-setvbuf.o)
@@ -553,66 +550,28 @@ Discarded input sections
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
- .text.__sflush_r
-                0x0000000000000000      0x118 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
- .text._fflush_r
-                0x0000000000000000       0x80 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
  .text.fflush   0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
- .debug_frame   0x0000000000000000       0x68 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
- .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
- .text.std      0x0000000000000000       0x48 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
- .text._cleanup_r
-                0x0000000000000000       0x10 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
  .text.__fp_lock
                 0x0000000000000000       0x18 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
  .text.__fp_unlock
                 0x0000000000000000       0x18 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
- .text.__sfmoreglue
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
  .text._cleanup
                 0x0000000000000000       0x10 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
- .text.__sfp_lock_acquire
-                0x0000000000000000       0x10 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
- .text.__sfp_lock_release
-                0x0000000000000000       0x10 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
- .text.__sinit_lock_acquire
-                0x0000000000000000       0x10 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
- .text.__sinit_lock_release
-                0x0000000000000000       0x10 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
- .text.__sinit  0x0000000000000000       0x70 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
- .text.__sfp    0x0000000000000000       0x90 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
  .text.__fp_lock_all
                 0x0000000000000000       0x1c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
  .text.__fp_unlock_all
                 0x0000000000000000       0x1c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
- .rodata.__sf_fake_stderr
-                0x0000000000000000       0x20 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
- .rodata.__sf_fake_stdin
-                0x0000000000000000       0x20 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
- .rodata.__sf_fake_stdout
-                0x0000000000000000       0x20 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
- .debug_frame   0x0000000000000000      0x170 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
- .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
  .text._fwalk   0x0000000000000000       0x36 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
- .text._fwalk_reent
-                0x0000000000000000       0x40 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
- .debug_frame   0x0000000000000000       0x58 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
- .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
  .text.__retarget_lock_init
-                0x0000000000000000        0x2 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
- .text.__retarget_lock_init_recursive
                 0x0000000000000000        0x2 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
  .text.__retarget_lock_close
                 0x0000000000000000        0x2 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
@@ -620,15 +579,11 @@ Discarded input sections
                 0x0000000000000000        0x2 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
  .text.__retarget_lock_acquire
                 0x0000000000000000        0x2 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
- .text.__retarget_lock_acquire_recursive
-                0x0000000000000000        0x2 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
  .text.__retarget_lock_try_acquire
                 0x0000000000000000        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
  .text.__retarget_lock_try_acquire_recursive
                 0x0000000000000000        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
  .text.__retarget_lock_release
-                0x0000000000000000        0x2 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
- .text.__retarget_lock_release_recursive
                 0x0000000000000000        0x2 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
  .bss.__lock___arc4random_mutex
                 0x0000000000000000        0x1 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
@@ -640,27 +595,11 @@ Discarded input sections
                 0x0000000000000000        0x1 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
  .bss.__lock___env_recursive_mutex
                 0x0000000000000000        0x1 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
- .bss.__lock___malloc_recursive_mutex
-                0x0000000000000000        0x1 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
- .bss.__lock___sfp_recursive_mutex
-                0x0000000000000000        0x1 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
- .bss.__lock___sinit_recursive_mutex
-                0x0000000000000000        0x1 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
  .bss.__lock___tz_mutex
                 0x0000000000000000        0x1 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
- .debug_frame   0x0000000000000000       0xb0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
- .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
- .text.__swhatbuf_r
-                0x0000000000000000       0x50 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
- .text.__smakebuf_r
-                0x0000000000000000       0x88 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
- .debug_frame   0x0000000000000000       0x54 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
- .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-malloc.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-malloc.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-malloc.o)
@@ -672,102 +611,88 @@ Discarded input sections
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
- .text._free_r  0x0000000000000000       0x94 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
- .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
- .text.sbrk_aligned
-                0x0000000000000000       0x44 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
- .text._malloc_r
-                0x0000000000000000       0xec /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
- .bss.__malloc_free_list
-                0x0000000000000000        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
- .bss.__malloc_sbrk_start
-                0x0000000000000000        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x0000000000000000       0x50 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
- .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+ .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+ .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+ .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+ .text.__sprint_r
+                0x0000000000000000       0x1c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+ .text.vfprintf
+                0x0000000000000000       0x18 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+ .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
- .text._sbrk_r  0x0000000000000000       0x24 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
- .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
- .text.__sread  0x0000000000000000       0x28 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
  .text.__seofread
                 0x0000000000000000        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
- .text.__swrite
-                0x0000000000000000       0x38 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
- .text.__sseek  0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
- .text.__sclose
-                0x0000000000000000        0xc /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
- .debug_frame   0x0000000000000000       0x90 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
- .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+ .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+ .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+ .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+ .text.__swbuf  0x0000000000000000       0x14 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
- .text._write_r
-                0x0000000000000000       0x28 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
- .debug_frame   0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
- .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
+ .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+ .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+ .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
- .text._close_r
-                0x0000000000000000       0x24 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
- .debug_frame   0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
- .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
- .text._fstat_r
-                0x0000000000000000       0x24 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
- .debug_frame   0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
+ .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+ .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+ .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+ .text.__sfvwrite_r
+                0x0000000000000000      0x2d0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
+ .debug_frame   0x0000000000000000       0x30 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
  .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
+                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fvwrite.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
- .text._isatty_r
-                0x0000000000000000       0x24 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
- .debug_frame   0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
- .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
- .text._lseek_r
-                0x0000000000000000       0x28 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
- .debug_frame   0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
+ .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memchr-stub.o)
+ .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memchr-stub.o)
+ .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memchr-stub.o)
+ .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .text.memcpy   0x0000000000000000       0x12 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000000000000000       0x28 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
  .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
+                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memmove.o)
+ .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memmove.o)
+ .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memmove.o)
+ .text.memmove  0x0000000000000000       0x26 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memmove.o)
+ .debug_frame   0x0000000000000000       0x28 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memmove.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
- .text.__malloc_lock
-                0x0000000000000000       0x10 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
- .text.__malloc_unlock
-                0x0000000000000000       0x10 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
- .debug_frame   0x0000000000000000       0x40 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
+ .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)
+ .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)
+ .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)
+ .text._realloc_r
+                0x0000000000000000       0x5e /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x0000000000000000       0x34 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)
  .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
+                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-reallocr.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
- .text._read_r  0x0000000000000000       0x28 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
- .debug_frame   0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
- .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
@@ -775,19 +700,19 @@ Discarded input sections
                 0x0000000000000000       0x1a /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
  .text._reclaim_reent
                 0x0000000000000000       0xcc /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
- .bss.errno     0x0000000000000000        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
- .debug_frame   0x0000000000000000       0x48 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+ .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-msizer.o)
+ .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-msizer.o)
+ .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-msizer.o)
+ .text._malloc_usable_size_r
+                0x0000000000000000       0x10 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-msizer.o)
+ .debug_frame   0x0000000000000000       0x20 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-msizer.o)
  .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-msizer.o)
+ .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+ .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(sbrk.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(sbrk.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(sbrk.o)
- .text._sbrk    0x0000000000000000       0x1c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(sbrk.o)
- .bss.heap_end.0
-                0x0000000000000000        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(sbrk.o)
- .debug_frame   0x0000000000000000       0x20 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(sbrk.o)
- .ARM.attributes
-                0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(sbrk.o)
  .text          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
  .data          0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
  .bss           0x0000000000000000        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(_exit.o)
@@ -875,7 +800,7 @@ LOAD /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-
                 0x0000000008000000                g_pfnVectors
                 0x00000000080000c0                . = ALIGN (0x4)
 
-.text           0x00000000080000c0      0xac8
+.text           0x00000000080000c0     0x1efc
                 0x00000000080000c0                . = ALIGN (0x4)
  *(.text)
  .text          0x00000000080000c0       0x48 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
@@ -883,231 +808,437 @@ LOAD /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-
                 0x0000000008000108                __udivsi3
                 0x0000000008000108                __aeabi_uidiv
                 0x0000000008000214                __aeabi_uidivmod
- .text          0x000000000800021c        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
-                0x000000000800021c                __aeabi_ldiv0
-                0x000000000800021c                __aeabi_idiv0
+ .text          0x000000000800021c      0x1d4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+                0x000000000800021c                __aeabi_idiv
+                0x000000000800021c                __divsi3
+                0x00000000080003e8                __aeabi_idivmod
+ .text          0x00000000080003f0        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x00000000080003f0                __aeabi_ldiv0
+                0x00000000080003f0                __aeabi_idiv0
+ .text          0x00000000080003f4       0x14 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+                0x00000000080003f4                __gnu_thumb1_case_shi
  *(.text*)
  .text.__libc_init_array
-                0x0000000008000220       0x48 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
-                0x0000000008000220                __libc_init_array
- .text.memset   0x0000000008000268       0x10 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
-                0x0000000008000268                memset
+                0x0000000008000408       0x48 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+                0x0000000008000408                __libc_init_array
+ .text.memset   0x0000000008000450       0x10 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+                0x0000000008000450                memset
  .text.APP_TIM1BaseConfig
-                0x0000000008000278       0x7c ./Build/User/main.o
+                0x0000000008000460       0x7c ./Build/User/main.o
  .text.APP_PWMChannelConfig
-                0x00000000080002f4       0x6c ./Build/User/main.o
+                0x00000000080004dc       0x6c ./Build/User/main.o
  .text.APP_I2CConfig
-                0x0000000008000360       0xb8 ./Build/User/main.o
- .text.main     0x0000000008000418       0x14 ./Build/User/main.o
-                0x0000000008000418                main
+                0x0000000008000548       0xb8 ./Build/User/main.o
+ .text.touch_sense
+                0x0000000008000600       0x88 ./Build/User/main.o
+                0x0000000008000600                touch_sense
+ .text.main     0x0000000008000688       0xa4 ./Build/User/main.o
+                0x0000000008000688                main
+ .text.rand     0x000000000800072c       0x18 ./Build/User/main.o
+                0x000000000800072c                rand
  .text.APP_TIM1UpdateCallback
-                0x000000000800042c       0x2c ./Build/User/main.o
-                0x000000000800042c                APP_TIM1UpdateCallback
+                0x0000000008000744       0xa8 ./Build/User/main.o
+                0x0000000008000744                APP_TIM1UpdateCallback
  .text.NMI_Handler
-                0x0000000008000458        0x2 ./Build/User/py32f0xx_it.o
-                0x0000000008000458                NMI_Handler
+                0x00000000080007ec        0x2 ./Build/User/py32f0xx_it.o
+                0x00000000080007ec                NMI_Handler
  .text.HardFault_Handler
-                0x000000000800045a        0x2 ./Build/User/py32f0xx_it.o
-                0x000000000800045a                HardFault_Handler
+                0x00000000080007ee        0x2 ./Build/User/py32f0xx_it.o
+                0x00000000080007ee                HardFault_Handler
  .text.SVC_Handler
-                0x000000000800045c        0x2 ./Build/User/py32f0xx_it.o
-                0x000000000800045c                SVC_Handler
+                0x00000000080007f0        0x2 ./Build/User/py32f0xx_it.o
+                0x00000000080007f0                SVC_Handler
  .text.PendSV_Handler
-                0x000000000800045e        0x2 ./Build/User/py32f0xx_it.o
-                0x000000000800045e                PendSV_Handler
+                0x00000000080007f2        0x2 ./Build/User/py32f0xx_it.o
+                0x00000000080007f2                PendSV_Handler
  .text.SysTick_Handler
-                0x0000000008000460        0x2 ./Build/User/py32f0xx_it.o
-                0x0000000008000460                SysTick_Handler
- *fill*         0x0000000008000462        0x2 
+                0x00000000080007f4        0x2 ./Build/User/py32f0xx_it.o
+                0x00000000080007f4                SysTick_Handler
+ *fill*         0x00000000080007f6        0x2 
  .text.TIM1_BRK_UP_TRG_COM_IRQHandler
-                0x0000000008000464       0x24 ./Build/User/py32f0xx_it.o
-                0x0000000008000464                TIM1_BRK_UP_TRG_COM_IRQHandler
+                0x00000000080007f8       0x24 ./Build/User/py32f0xx_it.o
+                0x00000000080007f8                TIM1_BRK_UP_TRG_COM_IRQHandler
  .text.I2C1_IRQHandler
-                0x0000000008000488       0xc0 ./Build/User/py32f0xx_it.o
-                0x0000000008000488                I2C1_IRQHandler
+                0x000000000800081c       0xc0 ./Build/User/py32f0xx_it.o
+                0x000000000800081c                I2C1_IRQHandler
  .text.LL_GPIO_Init
-                0x0000000008000548       0xb0 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
-                0x0000000008000548                LL_GPIO_Init
+                0x00000000080008dc       0xb0 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
+                0x00000000080008dc                LL_GPIO_Init
  .text.OC1Config
-                0x00000000080005f8       0x78 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
+                0x000000000800098c       0x78 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
  .text.OC2Config
-                0x0000000008000670       0x84 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
+                0x0000000008000a04       0x84 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
  .text.OC3Config
-                0x00000000080006f4       0x8c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
+                0x0000000008000a88       0x8c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
  .text.OC4Config
-                0x0000000008000780       0x68 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
+                0x0000000008000b14       0x68 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
  .text.LL_TIM_Init
-                0x00000000080007e8       0x58 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
-                0x00000000080007e8                LL_TIM_Init
+                0x0000000008000b7c       0x58 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
+                0x0000000008000b7c                LL_TIM_Init
  .text.LL_TIM_OC_Init
-                0x0000000008000840       0x40 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
-                0x0000000008000840                LL_TIM_OC_Init
+                0x0000000008000bd4       0x40 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
+                0x0000000008000bd4                LL_TIM_OC_Init
  .text.LL_I2C_Init
-                0x0000000008000880      0x10c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
-                0x0000000008000880                LL_I2C_Init
+                0x0000000008000c14      0x10c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
+                0x0000000008000c14                LL_I2C_Init
  .text.RCC_GetSystemClockFreq
-                0x000000000800098c       0x38 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
-                0x000000000800098c                RCC_GetSystemClockFreq
+                0x0000000008000d20       0x38 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
+                0x0000000008000d20                RCC_GetSystemClockFreq
  .text.RCC_GetHCLKClockFreq
-                0x00000000080009c4       0x20 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
-                0x00000000080009c4                RCC_GetHCLKClockFreq
+                0x0000000008000d58       0x20 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
+                0x0000000008000d58                RCC_GetHCLKClockFreq
  .text.RCC_GetPCLK1ClockFreq
-                0x00000000080009e4       0x20 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
-                0x00000000080009e4                RCC_GetPCLK1ClockFreq
+                0x0000000008000d78       0x20 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
+                0x0000000008000d78                RCC_GetPCLK1ClockFreq
  .text.LL_RCC_GetSystemClocksFreq
-                0x0000000008000a04       0x18 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
-                0x0000000008000a04                LL_RCC_GetSystemClocksFreq
+                0x0000000008000d98       0x18 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
+                0x0000000008000d98                LL_RCC_GetSystemClocksFreq
  .text.LL_Init1msTick
-                0x0000000008000a1c       0x20 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
-                0x0000000008000a1c                LL_Init1msTick
+                0x0000000008000db0       0x20 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
+                0x0000000008000db0                LL_Init1msTick
  .text.LL_SetSystemCoreClock
-                0x0000000008000a3c        0xc ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
-                0x0000000008000a3c                LL_SetSystemCoreClock
+                0x0000000008000dd0        0xc ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
+                0x0000000008000dd0                LL_SetSystemCoreClock
+ .text.__io_putchar
+                0x0000000008000ddc       0x20 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
+                0x0000000008000ddc                __io_putchar
+ .text.__io_getchar
+                0x0000000008000dfc       0x18 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
+                0x0000000008000dfc                __io_getchar
+ .text._write   0x0000000008000e14       0x1c ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
+                0x0000000008000e14                _write
+ .text._read    0x0000000008000e30       0x1c ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
+                0x0000000008000e30                _read
+ .text._isatty  0x0000000008000e4c       0x16 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
+                0x0000000008000e4c                _isatty
+ .text._close   0x0000000008000e62       0x18 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
+                0x0000000008000e62                _close
+ .text._lseek   0x0000000008000e7a       0x10 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
+                0x0000000008000e7a                _lseek
+ .text._fstat   0x0000000008000e8a       0x1a ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
+                0x0000000008000e8a                _fstat
  .text.BSP_RCC_HSI_24MConfig
-                0x0000000008000a48       0x88 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
-                0x0000000008000a48                BSP_RCC_HSI_24MConfig
+                0x0000000008000ea4       0x88 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
+                0x0000000008000ea4                BSP_RCC_HSI_24MConfig
  .text.SystemInit
-                0x0000000008000ad0       0x4c ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
-                0x0000000008000ad0                SystemInit
+                0x0000000008000f2c       0x4c ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
+                0x0000000008000f2c                SystemInit
  .text.Reset_Handler
-                0x0000000008000b1c       0x50 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/gcc/startup_py32f002a.o
-                0x0000000008000b1c                Reset_Handler
+                0x0000000008000f78       0x50 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/gcc/startup_py32f002a.o
+                0x0000000008000f78                Reset_Handler
  .text.Default_Handler
-                0x0000000008000b6c        0x2 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/gcc/startup_py32f002a.o
-                0x0000000008000b6c                LPTIM1_IRQHandler
-                0x0000000008000b6c                SPI1_IRQHandler
-                0x0000000008000b6c                EXTI2_3_IRQHandler
-                0x0000000008000b6c                TIM16_IRQHandler
-                0x0000000008000b6c                EXTI4_15_IRQHandler
-                0x0000000008000b6c                RCC_IRQHandler
-                0x0000000008000b6c                Default_Handler
-                0x0000000008000b6c                EXTI0_1_IRQHandler
-                0x0000000008000b6c                ADC_COMP_IRQHandler
-                0x0000000008000b6c                FLASH_IRQHandler
-                0x0000000008000b6c                USART1_IRQHandler
-                0x0000000008000b6c                TIM1_CC_IRQHandler
+                0x0000000008000fc8        0x2 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/gcc/startup_py32f002a.o
+                0x0000000008000fc8                LPTIM1_IRQHandler
+                0x0000000008000fc8                SPI1_IRQHandler
+                0x0000000008000fc8                EXTI2_3_IRQHandler
+                0x0000000008000fc8                TIM16_IRQHandler
+                0x0000000008000fc8                EXTI4_15_IRQHandler
+                0x0000000008000fc8                RCC_IRQHandler
+                0x0000000008000fc8                Default_Handler
+                0x0000000008000fc8                EXTI0_1_IRQHandler
+                0x0000000008000fc8                ADC_COMP_IRQHandler
+                0x0000000008000fc8                FLASH_IRQHandler
+                0x0000000008000fc8                USART1_IRQHandler
+                0x0000000008000fc8                TIM1_CC_IRQHandler
+ *fill*         0x0000000008000fca        0x2 
+ .text.__errno  0x0000000008000fcc        0xc /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-errno.o)
+                0x0000000008000fcc                __errno
+ .text.printf   0x0000000008000fd8       0x34 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+                0x0000000008000fd8                printf
+                0x0000000008000fd8                iprintf
+ .text.__sflush_r
+                0x000000000800100c      0x118 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+                0x000000000800100c                __sflush_r
+ .text._fflush_r
+                0x0000000008001124       0x80 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+                0x0000000008001124                _fflush_r
+ .text.std      0x00000000080011a4       0x48 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+ .text._cleanup_r
+                0x00000000080011ec       0x10 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x00000000080011ec                _cleanup_r
+ .text.__sfmoreglue
+                0x00000000080011fc       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x00000000080011fc                __sfmoreglue
+ .text.__sfp_lock_acquire
+                0x0000000008001228       0x10 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x0000000008001228                __sfp_lock_acquire
+ .text.__sfp_lock_release
+                0x0000000008001238       0x10 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x0000000008001238                __sfp_lock_release
+ .text.__sinit_lock_acquire
+                0x0000000008001248       0x10 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x0000000008001248                __sinit_lock_acquire
+ .text.__sinit_lock_release
+                0x0000000008001258       0x10 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x0000000008001258                __sinit_lock_release
+ .text.__sinit  0x0000000008001268       0x70 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x0000000008001268                __sinit
+ .text.__sfp    0x00000000080012d8       0x90 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x00000000080012d8                __sfp
+ .text._fwalk_reent
+                0x0000000008001368       0x40 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
+                0x0000000008001368                _fwalk_reent
+ .text.__retarget_lock_init_recursive
+                0x00000000080013a8        0x2 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+                0x00000000080013a8                __retarget_lock_init_recursive
+ .text.__retarget_lock_acquire_recursive
+                0x00000000080013aa        0x2 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+                0x00000000080013aa                __retarget_lock_acquire_recursive
+ .text.__retarget_lock_release_recursive
+                0x00000000080013ac        0x2 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+                0x00000000080013ac                __retarget_lock_release_recursive
+ *fill*         0x00000000080013ae        0x2 
+ .text.__swhatbuf_r
+                0x00000000080013b0       0x50 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
+                0x00000000080013b0                __swhatbuf_r
+ .text.__smakebuf_r
+                0x0000000008001400       0x88 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
+                0x0000000008001400                __smakebuf_r
+ .text._free_r  0x0000000008001488       0x94 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
+                0x0000000008001488                _free_r
+ .text.sbrk_aligned
+                0x000000000800151c       0x44 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+ .text._malloc_r
+                0x0000000008001560       0xec /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+                0x0000000008001560                _malloc_r
+ .text.__sfputc_r
+                0x000000000800164c       0x2a /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+ .text.__sfputs_r
+                0x0000000008001676       0x24 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0000000008001676                __sfputs_r
+ *fill*         0x000000000800169a        0x2 
+ .text._vfprintf_r
+                0x000000000800169c      0x274 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x000000000800169c                _vfiprintf_r
+                0x000000000800169c                _vfprintf_r
+ .text._printf_common
+                0x0000000008001910       0xde /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0000000008001910                _printf_common
+ *fill*         0x00000000080019ee        0x2 
+ .text._printf_i
+                0x00000000080019f0      0x224 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00000000080019f0                _printf_i
+ .text._sbrk_r  0x0000000008001c14       0x24 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
+                0x0000000008001c14                _sbrk_r
+ .text.__sread  0x0000000008001c38       0x28 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+                0x0000000008001c38                __sread
+ .text.__swrite
+                0x0000000008001c60       0x38 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+                0x0000000008001c60                __swrite
+ .text.__sseek  0x0000000008001c98       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+                0x0000000008001c98                __sseek
+ .text.__sclose
+                0x0000000008001cc4        0xc /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+                0x0000000008001cc4                __sclose
+ .text.__swbuf_r
+                0x0000000008001cd0       0xac /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+                0x0000000008001cd0                __swbuf_r
+ .text._write_r
+                0x0000000008001d7c       0x28 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
+                0x0000000008001d7c                _write_r
+ .text.__swsetup_r
+                0x0000000008001da4       0xf0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+                0x0000000008001da4                __swsetup_r
+ .text._close_r
+                0x0000000008001e94       0x24 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
+                0x0000000008001e94                _close_r
+ .text._fstat_r
+                0x0000000008001eb8       0x24 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
+                0x0000000008001eb8                _fstat_r
+ .text._isatty_r
+                0x0000000008001edc       0x24 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
+                0x0000000008001edc                _isatty_r
+ .text._lseek_r
+                0x0000000008001f00       0x28 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
+                0x0000000008001f00                _lseek_r
+ .text.memchr   0x0000000008001f28       0x16 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memchr-stub.o)
+                0x0000000008001f28                memchr
+ *fill*         0x0000000008001f3e        0x2 
+ .text.__malloc_lock
+                0x0000000008001f40       0x10 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
+                0x0000000008001f40                __malloc_lock
+ .text.__malloc_unlock
+                0x0000000008001f50       0x10 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
+                0x0000000008001f50                __malloc_unlock
+ .text._read_r  0x0000000008001f60       0x28 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
+                0x0000000008001f60                _read_r
+ .text._sbrk    0x0000000008001f88       0x1c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(sbrk.o)
+                0x0000000008001f88                _sbrk
  *(.glue_7)
- .glue_7        0x0000000008000b6e        0x0 linker stubs
+ .glue_7        0x0000000008001fa4        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000000008000b6e        0x0 linker stubs
+ .glue_7t       0x0000000008001fa4        0x0 linker stubs
  *(.eh_frame)
- *fill*         0x0000000008000b6e        0x2 
- .eh_frame      0x0000000008000b70        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .eh_frame      0x0000000008001fa4        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  *(.init)
- .init          0x0000000008000b70        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x0000000008000b70                _init
- .init          0x0000000008000b74        0x8 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+ .init          0x0000000008001fa4        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x0000000008001fa4                _init
+ .init          0x0000000008001fa8        0x8 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
  *(.fini)
- .fini          0x0000000008000b7c        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x0000000008000b7c                _fini
- .fini          0x0000000008000b80        0x8 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
-                0x0000000008000b88                . = ALIGN (0x4)
-                0x0000000008000b88                _etext = .
+ .fini          0x0000000008001fb0        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x0000000008001fb0                _fini
+ .fini          0x0000000008001fb4        0x8 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+                0x0000000008001fbc                . = ALIGN (0x4)
+                0x0000000008001fbc                _etext = .
 
-.vfp11_veneer   0x0000000008000b88        0x0
- .vfp11_veneer  0x0000000008000b88        0x0 linker stubs
+.vfp11_veneer   0x0000000008001fbc        0x0
+ .vfp11_veneer  0x0000000008001fbc        0x0 linker stubs
 
-.v4_bx          0x0000000008000b88        0x0
- .v4_bx         0x0000000008000b88        0x0 linker stubs
+.v4_bx          0x0000000008001fbc        0x0
+ .v4_bx         0x0000000008001fbc        0x0 linker stubs
 
-.iplt           0x0000000008000b88        0x0
- .iplt          0x0000000008000b88        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x0000000008001fbc        0x0
+ .iplt          0x0000000008001fbc        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x0000000008000b88      0x28c
-                0x0000000008000b88                . = ALIGN (0x4)
+.rodata         0x0000000008001fbc      0x3c0
+                0x0000000008001fbc                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
+ .rodata._global_impure_ptr
+                0x0000000008001fbc        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+                0x0000000008001fbc                _global_impure_ptr
+ .rodata.main.str1.4
+                0x0000000008001fc0        0xd ./Build/User/main.o
+ *fill*         0x0000000008001fcd        0x3 
+ .rodata.heart_pat
+                0x0000000008001fd0       0x60 ./Build/User/main.o
+                0x0000000008001fd0                heart_pat
+ .rodata.saw_pat
+                0x0000000008002030       0x2c ./Build/User/main.o
+                0x0000000008002030                saw_pat
  .rodata.sineLookupTable
-                0x0000000008000b88      0x200 ./Build/User/main.o
-                0x0000000008000b88                sineLookupTable
+                0x000000000800205c      0x200 ./Build/User/main.o
+                0x000000000800205c                sineLookupTable
  .rodata.serial
-                0x0000000008000d88        0x9 ./Build/User/py32f0xx_it.o
-                0x0000000008000d88                serial
- *fill*         0x0000000008000d91        0x3 
+                0x000000000800225c        0x9 ./Build/User/py32f0xx_it.o
+                0x000000000800225c                serial
+ *fill*         0x0000000008002265        0x3 
  .rodata.AHBPrescTable
-                0x0000000008000d94       0x40 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
-                0x0000000008000d94                AHBPrescTable
+                0x0000000008002268       0x40 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
+                0x0000000008002268                AHBPrescTable
  .rodata.APBPrescTable
-                0x0000000008000dd4       0x20 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
-                0x0000000008000dd4                APBPrescTable
+                0x00000000080022a8       0x20 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
+                0x00000000080022a8                APBPrescTable
  .rodata.HSIFreqTable
-                0x0000000008000df4       0x20 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
-                0x0000000008000df4                HSIFreqTable
-                0x0000000008000e14                . = ALIGN (0x4)
+                0x00000000080022c8       0x20 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
+                0x00000000080022c8                HSIFreqTable
+ .rodata.__sf_fake_stderr
+                0x00000000080022e8       0x20 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x00000000080022e8                __sf_fake_stderr
+ .rodata.__sf_fake_stdin
+                0x0000000008002308       0x20 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x0000000008002308                __sf_fake_stdin
+ .rodata.__sf_fake_stdout
+                0x0000000008002328       0x20 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+                0x0000000008002328                __sf_fake_stdout
+ .rodata._vfprintf_r.str1.1
+                0x0000000008002348       0x11 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+ .rodata._printf_i.str1.1
+                0x0000000008002359       0x22 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x000000000800237c                . = ALIGN (0x4)
+ *fill*         0x000000000800237b        0x1 
 
-.rel.dyn        0x0000000008000e14        0x0
- .rel.iplt      0x0000000008000e14        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x000000000800237c        0x0
+ .rel.iplt      0x000000000800237c        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x0000000008000e14        0x0
-                0x0000000008000e14                __exidx_start = .
+.ARM            0x000000000800237c        0x0
+                0x000000000800237c                __exidx_start = .
  *(.ARM.exidx*)
-                0x0000000008000e14                __exidx_end = .
+                0x000000000800237c                __exidx_end = .
 
-.preinit_array  0x0000000008000e14        0x0
-                0x0000000008000e14                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x000000000800237c        0x0
+                0x000000000800237c                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0000000008000e14                PROVIDE (__preinit_array_end = .)
+                0x000000000800237c                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x0000000008000e14        0x4
-                0x0000000008000e14                PROVIDE (__init_array_start = .)
+.init_array     0x000000000800237c        0x4
+                0x000000000800237c                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0000000008000e14        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x0000000008000e18                PROVIDE (__init_array_end = .)
+ .init_array    0x000000000800237c        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000008002380                PROVIDE (__init_array_end = .)
 
-.fini_array     0x0000000008000e18        0x4
+.fini_array     0x0000000008002380        0x4
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008000e18        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .fini_array    0x0000000008002380        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x0000000008000e1c                _sidata = LOADADDR (.data)
+                0x0000000008002384                _sidata = LOADADDR (.data)
 
-.data           0x00000000200000c0        0x4 load address 0x0000000008000e1c
+.data           0x00000000200000c0       0x6c load address 0x0000000008002384
                 0x00000000200000c0                . = ALIGN (0x4)
                 0x00000000200000c0                _sdata = .
  *(.data)
  *(.data*)
+ .data._impure_ptr
+                0x00000000200000c0        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+                0x00000000200000c0                _impure_ptr
+ .data.impure_data
+                0x00000000200000c4       0x60 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
+ .data.rseed    0x0000000020000124        0x4 ./Build/User/main.o
+                0x0000000020000124                rseed
  .data.SystemCoreClock
-                0x00000000200000c0        0x4 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
-                0x00000000200000c0                SystemCoreClock
-                0x00000000200000c4                . = ALIGN (0x4)
-                0x00000000200000c4                _edata = .
+                0x0000000020000128        0x4 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
+                0x0000000020000128                SystemCoreClock
+                0x000000002000012c                . = ALIGN (0x4)
+                0x000000002000012c                _edata = .
 
-.igot.plt       0x00000000200000c4        0x0 load address 0x0000000008000e20
- .igot.plt      0x00000000200000c4        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x00000000200000c4                . = ALIGN (0x4)
+.igot.plt       0x000000002000012c        0x0 load address 0x00000000080023f0
+ .igot.plt      0x000000002000012c        0x0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x000000002000012c                . = ALIGN (0x4)
 
-.bss            0x00000000200000c4       0x24 load address 0x0000000008000e20
-                0x00000000200000c4                _sbss = .
-                0x00000000200000c4                __bss_start__ = _sbss
+.bss            0x000000002000012c       0x3c load address 0x00000000080023f0
+                0x000000002000012c                _sbss = .
+                0x000000002000012c                __bss_start__ = _sbss
  *(.bss)
- .bss           0x00000000200000c4       0x1c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .bss           0x000000002000012c       0x1c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  *(.bss*)
- .bss.heart_idx
-                0x00000000200000e0        0x4 ./Build/User/main.o
-                0x00000000200000e0                heart_idx
- .bss.i2c_idx   0x00000000200000e4        0x1 ./Build/User/py32f0xx_it.o
-                0x00000000200000e4                i2c_idx
+ .bss.idx       0x0000000020000148        0x4 ./Build/User/main.o
+                0x0000000020000148                idx
+ .bss.ptn       0x000000002000014c        0x4 ./Build/User/main.o
+                0x000000002000014c                ptn
+ .bss.touch     0x0000000020000150        0x4 ./Build/User/main.o
+                0x0000000020000150                touch
+ .bss.i2c_idx   0x0000000020000154        0x1 ./Build/User/py32f0xx_it.o
+                0x0000000020000154                i2c_idx
+ .bss.__lock___malloc_recursive_mutex
+                0x0000000020000155        0x1 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+                0x0000000020000155                __lock___malloc_recursive_mutex
+ .bss.__lock___sfp_recursive_mutex
+                0x0000000020000156        0x1 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+                0x0000000020000156                __lock___sfp_recursive_mutex
+ .bss.__lock___sinit_recursive_mutex
+                0x0000000020000157        0x1 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+                0x0000000020000157                __lock___sinit_recursive_mutex
+ .bss.__malloc_free_list
+                0x0000000020000158        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+                0x0000000020000158                __malloc_free_list
+ .bss.__malloc_sbrk_start
+                0x000000002000015c        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+                0x000000002000015c                __malloc_sbrk_start
+ .bss.errno     0x0000000020000160        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+                0x0000000020000160                errno
+ .bss.heap_end.0
+                0x0000000020000164        0x4 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(sbrk.o)
  *(COMMON)
-                0x00000000200000e8                . = ALIGN (0x4)
- *fill*         0x00000000200000e5        0x3 
-                0x00000000200000e8                _ebss = .
-                0x00000000200000e8                __bss_end__ = _ebss
+                0x0000000020000168                . = ALIGN (0x4)
+                0x0000000020000168                _ebss = .
+                0x0000000020000168                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x00000000200000e8      0x300 load address 0x0000000008000e20
-                0x00000000200000e8                . = ALIGN (0x8)
-                0x00000000200000e8                PROVIDE (end = .)
+                0x0000000020000168      0x300 load address 0x00000000080023f0
+                0x0000000020000168                . = ALIGN (0x8)
+                0x0000000020000168                PROVIDE (end = .)
                 [!provide]                        PROVIDE (_end = .)
-                0x00000000200001e8                . = (. + _Min_Heap_Size)
- *fill*         0x00000000200000e8      0x100 
-                0x00000000200003e8                . = (. + _Min_Stack_Size)
- *fill*         0x00000000200001e8      0x200 
-                0x00000000200003e8                . = ALIGN (0x8)
+                0x0000000020000268                . = (. + _Min_Heap_Size)
+ *fill*         0x0000000020000168      0x100 
+                0x0000000020000468                . = (. + _Min_Stack_Size)
+ *fill*         0x0000000020000268      0x200 
+                0x0000000020000468                . = ALIGN (0x8)
 
 /DISCARD/
  libc.a(*)
@@ -1122,156 +1253,250 @@ LOAD /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-
  .ARM.attributes
                 0x000000000000001e       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
  .ARM.attributes
-                0x000000000000004a       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+                0x000000000000004a       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-impure.o)
  .ARM.attributes
-                0x0000000000000076       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+                0x0000000000000076       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
  .ARM.attributes
-                0x00000000000000a2       0x2c ./Build/User/main.o
+                0x00000000000000a2       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
  .ARM.attributes
-                0x00000000000000ce       0x2c ./Build/User/py32f0xx_it.o
+                0x00000000000000ce       0x2c ./Build/User/main.o
  .ARM.attributes
-                0x00000000000000fa       0x2c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
+                0x00000000000000fa       0x2c ./Build/User/py32f0xx_it.o
  .ARM.attributes
-                0x0000000000000126       0x2c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
+                0x0000000000000126       0x2c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
  .ARM.attributes
-                0x0000000000000152       0x2c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
+                0x0000000000000152       0x2c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
  .ARM.attributes
-                0x000000000000017e       0x2c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
+                0x000000000000017e       0x2c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
  .ARM.attributes
-                0x00000000000001aa       0x2c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
+                0x00000000000001aa       0x2c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
  .ARM.attributes
-                0x00000000000001d6       0x2c ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
+                0x00000000000001d6       0x2c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
  .ARM.attributes
-                0x0000000000000202       0x2c ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
+                0x0000000000000202       0x2c ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
  .ARM.attributes
-                0x000000000000022e       0x22 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/gcc/startup_py32f002a.o
+                0x000000000000022e       0x2c ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
  .ARM.attributes
-                0x0000000000000250       0x1e /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                0x000000000000025a       0x2c ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
  .ARM.attributes
-                0x000000000000026e       0x1e /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x0000000000000286       0x22 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/gcc/startup_py32f002a.o
  .ARM.attributes
-                0x000000000000028c       0x1e /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
+                0x00000000000002a8       0x1e /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000000000002c6       0x1e /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x00000000000002e4       0x1e /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0000000000000302       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-errno.o)
+ .ARM.attributes
+                0x000000000000032e       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+ .ARM.attributes
+                0x000000000000035a       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+ .ARM.attributes
+                0x0000000000000386       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+ .ARM.attributes
+                0x00000000000003b2       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
+ .ARM.attributes
+                0x00000000000003de       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+ .ARM.attributes
+                0x000000000000040a       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
+ .ARM.attributes
+                0x0000000000000436       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
+ .ARM.attributes
+                0x0000000000000462       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+ .ARM.attributes
+                0x000000000000048e       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+ .ARM.attributes
+                0x00000000000004ba       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .ARM.attributes
+                0x00000000000004e6       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
+ .ARM.attributes
+                0x0000000000000512       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+ .ARM.attributes
+                0x000000000000053e       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+ .ARM.attributes
+                0x000000000000056a       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
+ .ARM.attributes
+                0x0000000000000596       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+ .ARM.attributes
+                0x00000000000005c2       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
+ .ARM.attributes
+                0x00000000000005ee       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
+ .ARM.attributes
+                0x000000000000061a       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
+ .ARM.attributes
+                0x0000000000000646       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
+ .ARM.attributes
+                0x0000000000000672       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memchr-stub.o)
+ .ARM.attributes
+                0x000000000000069e       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
+ .ARM.attributes
+                0x00000000000006ca       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
+ .ARM.attributes
+                0x00000000000006f6       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+ .ARM.attributes
+                0x0000000000000722       0x1e /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_shi.o)
+ .ARM.attributes
+                0x0000000000000740       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(sbrk.o)
+ .ARM.attributes
+                0x000000000000076c       0x1e /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtn.o
 OUTPUT(Build/app.elf elf32-littlearm)
 LOAD linker stubs
 LOAD /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a
 LOAD /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 LOAD /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a
 
-.debug_frame    0x0000000000000000      0x5c0
+.debug_frame    0x0000000000000000      0xfbc
  .debug_frame   0x0000000000000000       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
  .debug_frame   0x000000000000002c       0x20 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
- .debug_frame   0x000000000000004c       0xa0 ./Build/User/main.o
- .debug_frame   0x00000000000000ec       0x8c ./Build/User/py32f0xx_it.o
- .debug_frame   0x0000000000000178       0x50 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
- .debug_frame   0x00000000000001c8      0x1e4 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
- .debug_frame   0x00000000000003ac       0x58 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
- .debug_frame   0x0000000000000404       0xb8 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
- .debug_frame   0x00000000000004bc       0x5c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
- .debug_frame   0x0000000000000518       0x58 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
- .debug_frame   0x0000000000000570       0x30 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
- .debug_frame   0x00000000000005a0       0x20 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_frame   0x000000000000004c       0xd8 ./Build/User/main.o
+ .debug_frame   0x0000000000000124       0x8c ./Build/User/py32f0xx_it.o
+ .debug_frame   0x00000000000001b0       0x50 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
+ .debug_frame   0x0000000000000200      0x1e4 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
+ .debug_frame   0x00000000000003e4       0x58 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
+ .debug_frame   0x000000000000043c       0xb8 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
+ .debug_frame   0x00000000000004f4       0x5c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
+ .debug_frame   0x0000000000000550      0x194 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
+ .debug_frame   0x00000000000006e4       0x58 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
+ .debug_frame   0x000000000000073c       0x30 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
+ .debug_frame   0x000000000000076c       0x20 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_frame   0x000000000000078c       0x20 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+ .debug_frame   0x00000000000007ac       0x20 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-errno.o)
+ .debug_frame   0x00000000000007cc       0x50 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-printf.o)
+ .debug_frame   0x000000000000081c       0x68 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fflush.o)
+ .debug_frame   0x0000000000000884      0x170 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-findfp.o)
+ .debug_frame   0x00000000000009f4       0x58 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fwalk.o)
+ .debug_frame   0x0000000000000a4c       0xb0 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lock.o)
+ .debug_frame   0x0000000000000afc       0x54 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-makebuf.o)
+ .debug_frame   0x0000000000000b50       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x0000000000000b7c       0x50 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x0000000000000bcc       0x9c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf.o)
+ .debug_frame   0x0000000000000c68       0x54 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x0000000000000cbc       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x0000000000000ce8       0x90 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-stdio.o)
+ .debug_frame   0x0000000000000d78       0x48 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wbuf.o)
+ .debug_frame   0x0000000000000dc0       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-writer.o)
+ .debug_frame   0x0000000000000dec       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-wsetup.o)
+ .debug_frame   0x0000000000000e18       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-closer.o)
+ .debug_frame   0x0000000000000e44       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-fstatr.o)
+ .debug_frame   0x0000000000000e70       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-isattyr.o)
+ .debug_frame   0x0000000000000e9c       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-lseekr.o)
+ .debug_frame   0x0000000000000ec8       0x20 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memchr-stub.o)
+ .debug_frame   0x0000000000000ee8       0x40 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-mlock.o)
+ .debug_frame   0x0000000000000f28       0x2c /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-readr.o)
+ .debug_frame   0x0000000000000f54       0x48 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-reent.o)
+ .debug_frame   0x0000000000000f9c       0x20 /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a(sbrk.o)
 
-.debug_info     0x0000000000000000     0x52dd
- .debug_info    0x0000000000000000      0xffb ./Build/User/main.o
- .debug_info    0x0000000000000ffb      0x92a ./Build/User/py32f0xx_it.o
- .debug_info    0x0000000000001925      0x7e2 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
- .debug_info    0x0000000000002107     0x1232 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
- .debug_info    0x0000000000003339      0x6f8 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
- .debug_info    0x0000000000003a31      0x827 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
- .debug_info    0x0000000000004258      0x494 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
- .debug_info    0x00000000000046ec      0x7be ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
- .debug_info    0x0000000000004eaa      0x411 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
- .debug_info    0x00000000000052bb       0x22 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/gcc/startup_py32f002a.o
+.debug_info     0x0000000000000000     0x7613
+ .debug_info    0x0000000000000000     0x167b ./Build/User/main.o
+ .debug_info    0x000000000000167b      0x92a ./Build/User/py32f0xx_it.o
+ .debug_info    0x0000000000001fa5      0x7e2 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
+ .debug_info    0x0000000000002787     0x1232 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
+ .debug_info    0x00000000000039b9      0x6f8 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
+ .debug_info    0x00000000000040b1      0x827 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
+ .debug_info    0x00000000000048d8      0x494 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
+ .debug_info    0x0000000000004d6c     0x1cb6 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
+ .debug_info    0x0000000000006a22      0x7be ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
+ .debug_info    0x00000000000071e0      0x411 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
+ .debug_info    0x00000000000075f1       0x22 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/gcc/startup_py32f002a.o
 
-.debug_abbrev   0x0000000000000000     0x1354
- .debug_abbrev  0x0000000000000000      0x2ab ./Build/User/main.o
- .debug_abbrev  0x00000000000002ab      0x1af ./Build/User/py32f0xx_it.o
- .debug_abbrev  0x000000000000045a      0x20c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
- .debug_abbrev  0x0000000000000666      0x2a2 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
- .debug_abbrev  0x0000000000000908      0x23c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
- .debug_abbrev  0x0000000000000b44      0x285 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
- .debug_abbrev  0x0000000000000dc9      0x289 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
- .debug_abbrev  0x0000000000001052      0x1bb ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
- .debug_abbrev  0x000000000000120d      0x135 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
- .debug_abbrev  0x0000000000001342       0x12 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/gcc/startup_py32f002a.o
+.debug_abbrev   0x0000000000000000     0x176f
+ .debug_abbrev  0x0000000000000000      0x360 ./Build/User/main.o
+ .debug_abbrev  0x0000000000000360      0x1af ./Build/User/py32f0xx_it.o
+ .debug_abbrev  0x000000000000050f      0x20c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
+ .debug_abbrev  0x000000000000071b      0x2a2 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
+ .debug_abbrev  0x00000000000009bd      0x23c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
+ .debug_abbrev  0x0000000000000bf9      0x285 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
+ .debug_abbrev  0x0000000000000e7e      0x289 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
+ .debug_abbrev  0x0000000000001107      0x366 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
+ .debug_abbrev  0x000000000000146d      0x1bb ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
+ .debug_abbrev  0x0000000000001628      0x135 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
+ .debug_abbrev  0x000000000000175d       0x12 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/gcc/startup_py32f002a.o
 
-.debug_loc      0x0000000000000000     0x1f8d
- .debug_loc     0x0000000000000000      0x1c2 ./Build/User/main.o
- .debug_loc     0x00000000000001c2      0x1cf ./Build/User/py32f0xx_it.o
- .debug_loc     0x0000000000000391      0x38a ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
- .debug_loc     0x000000000000071b      0xf95 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
- .debug_loc     0x00000000000016b0      0x2d6 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
- .debug_loc     0x0000000000001986      0x2f6 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
- .debug_loc     0x0000000000001c7c      0x17c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
- .debug_loc     0x0000000000001df8      0x122 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
- .debug_loc     0x0000000000001f1a       0x73 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
+.debug_loc      0x0000000000000000     0x2ce0
+ .debug_loc     0x0000000000000000      0x635 ./Build/User/main.o
+ .debug_loc     0x0000000000000635      0x1cf ./Build/User/py32f0xx_it.o
+ .debug_loc     0x0000000000000804      0x38a ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
+ .debug_loc     0x0000000000000b8e      0xf95 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
+ .debug_loc     0x0000000000001b23      0x2d6 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
+ .debug_loc     0x0000000000001df9      0x2f6 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
+ .debug_loc     0x00000000000020ef      0x17c ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
+ .debug_loc     0x000000000000226b      0x8e0 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
+ .debug_loc     0x0000000000002b4b      0x122 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
+ .debug_loc     0x0000000000002c6d       0x73 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
 
-.debug_aranges  0x0000000000000000      0x2d0
+.debug_aranges  0x0000000000000000      0x378
  .debug_aranges
-                0x0000000000000000       0x48 ./Build/User/main.o
+                0x0000000000000000       0x58 ./Build/User/main.o
  .debug_aranges
-                0x0000000000000048       0x50 ./Build/User/py32f0xx_it.o
+                0x0000000000000058       0x50 ./Build/User/py32f0xx_it.o
  .debug_aranges
-                0x0000000000000098       0x30 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
+                0x00000000000000a8       0x30 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
  .debug_aranges
-                0x00000000000000c8       0xc0 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
+                0x00000000000000d8       0xc0 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
  .debug_aranges
-                0x0000000000000188       0x30 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
+                0x0000000000000198       0x30 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
  .debug_aranges
-                0x00000000000001b8       0x60 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
+                0x00000000000001c8       0x60 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
  .debug_aranges
-                0x0000000000000218       0x38 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
+                0x0000000000000228       0x38 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
  .debug_aranges
-                0x0000000000000250       0x30 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
+                0x0000000000000260       0x98 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
  .debug_aranges
-                0x0000000000000280       0x28 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
+                0x00000000000002f8       0x30 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
  .debug_aranges
-                0x00000000000002a8       0x28 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/gcc/startup_py32f002a.o
+                0x0000000000000328       0x28 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
+ .debug_aranges
+                0x0000000000000350       0x28 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/gcc/startup_py32f002a.o
 
-.debug_ranges   0x0000000000000000      0x2e0
- .debug_ranges  0x0000000000000000       0x38 ./Build/User/main.o
- .debug_ranges  0x0000000000000038       0x40 ./Build/User/py32f0xx_it.o
- .debug_ranges  0x0000000000000078       0x68 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
- .debug_ranges  0x00000000000000e0       0xe0 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
- .debug_ranges  0x00000000000001c0       0x50 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
- .debug_ranges  0x0000000000000210       0x50 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
- .debug_ranges  0x0000000000000260       0x28 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
- .debug_ranges  0x0000000000000288       0x20 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
- .debug_ranges  0x00000000000002a8       0x18 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
- .debug_ranges  0x00000000000002c0       0x20 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/gcc/startup_py32f002a.o
+.debug_ranges   0x0000000000000000      0x3b0
+ .debug_ranges  0x0000000000000000       0x80 ./Build/User/main.o
+ .debug_ranges  0x0000000000000080       0x40 ./Build/User/py32f0xx_it.o
+ .debug_ranges  0x00000000000000c0       0x68 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
+ .debug_ranges  0x0000000000000128       0xe0 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
+ .debug_ranges  0x0000000000000208       0x50 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
+ .debug_ranges  0x0000000000000258       0x50 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
+ .debug_ranges  0x00000000000002a8       0x28 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
+ .debug_ranges  0x00000000000002d0       0x88 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
+ .debug_ranges  0x0000000000000358       0x20 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
+ .debug_ranges  0x0000000000000378       0x18 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
+ .debug_ranges  0x0000000000000390       0x20 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/gcc/startup_py32f002a.o
 
-.debug_line     0x0000000000000000     0x2b9a
- .debug_line    0x0000000000000000      0x547 ./Build/User/main.o
- .debug_line    0x0000000000000547      0x3fe ./Build/User/py32f0xx_it.o
- .debug_line    0x0000000000000945      0x3f6 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
- .debug_line    0x0000000000000d3b      0xa11 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
- .debug_line    0x000000000000174c      0x330 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
- .debug_line    0x0000000000001a7c      0x5c7 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
- .debug_line    0x0000000000002043      0x382 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
- .debug_line    0x00000000000023c5      0x498 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
- .debug_line    0x000000000000285d      0x29d ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
- .debug_line    0x0000000000002afa       0xa0 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/gcc/startup_py32f002a.o
+.debug_line     0x0000000000000000     0x384d
+ .debug_line    0x0000000000000000      0x899 ./Build/User/main.o
+ .debug_line    0x0000000000000899      0x3fe ./Build/User/py32f0xx_it.o
+ .debug_line    0x0000000000000c97      0x3f6 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
+ .debug_line    0x000000000000108d      0xa11 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
+ .debug_line    0x0000000000001a9e      0x330 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
+ .debug_line    0x0000000000001dce      0x5c7 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
+ .debug_line    0x0000000000002395      0x382 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
+ .debug_line    0x0000000000002717      0x961 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
+ .debug_line    0x0000000000003078      0x498 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
+ .debug_line    0x0000000000003510      0x29d ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
+ .debug_line    0x00000000000037ad       0xa0 ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/gcc/startup_py32f002a.o
 
-.debug_str      0x0000000000000000     0x163d
- .debug_str     0x0000000000000000      0x776 ./Build/User/main.o
-                                        0x820 (size before relaxing)
- .debug_str     0x0000000000000776      0x235 ./Build/User/py32f0xx_it.o
+.debug_str      0x0000000000000000     0x1dcc
+ .debug_str     0x0000000000000000      0x844 ./Build/User/main.o
+                                        0x8f8 (size before relaxing)
+ .debug_str     0x0000000000000844      0x235 ./Build/User/py32f0xx_it.o
                                         0x489 (size before relaxing)
- .debug_str     0x00000000000009ab      0x145 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
+ .debug_str     0x0000000000000a79      0x10b ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_gpio.o
                                         0x3d2 (size before relaxing)
- .debug_str     0x0000000000000af0      0x48f ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
+ .debug_str     0x0000000000000b84      0x488 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_tim.o
                                         0x878 (size before relaxing)
- .debug_str     0x0000000000000f7f      0x14d ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
+ .debug_str     0x000000000000100c      0x14d ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
                                         0x433 (size before relaxing)
- .debug_str     0x00000000000010cc      0x281 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
+ .debug_str     0x0000000000001159      0x281 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
                                         0x518 (size before relaxing)
- .debug_str     0x000000000000134d      0x153 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
+ .debug_str     0x00000000000013da      0x153 ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
                                         0x333 (size before relaxing)
- .debug_str     0x00000000000014a0       0xd4 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
+ .debug_str     0x000000000000152d      0x702 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
+                                        0xae5 (size before relaxing)
+ .debug_str     0x0000000000001c2f       0xd4 ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
                                         0x410 (size before relaxing)
- .debug_str     0x0000000000001574       0x7c ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
+ .debug_str     0x0000000000001d03       0x7c ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
                                         0x2e9 (size before relaxing)
- .debug_str     0x00000000000015f0       0x4d ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/gcc/startup_py32f002a.o
+ .debug_str     0x0000000000001d7f       0x4d ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/gcc/startup_py32f002a.o
                                          0x79 (size before relaxing)
 
 .comment        0x0000000000000000       0x49
@@ -1283,5 +1508,6 @@ LOAD /opt/homebrew/Cellar/arm-none-eabi-gcc/10.3-2021.10/gcc/bin/../lib/gcc/arm-
  .comment       0x0000000000000049       0x4a ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_i2c.o
  .comment       0x0000000000000049       0x4a ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_rcc.o
  .comment       0x0000000000000049       0x4a ./Build/Libraries/PY32F0xx_LL_Driver/Src/py32f0xx_ll_utils.o
+ .comment       0x0000000000000049       0x4a ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_printf.o
  .comment       0x0000000000000049       0x4a ./Build/Libraries/PY32F0xx_LL_BSP/Src/py32f0xx_bsp_clock.o
  .comment       0x0000000000000049       0x4a ./Build/Libraries/CMSIS/Device/PY32F0xx/Source/system_py32f0xx.o
