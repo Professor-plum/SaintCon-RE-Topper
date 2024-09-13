@@ -9,7 +9,7 @@ A reverse engineering themed SaintCon 2024 badge topper
 * 2x OSRAM TOPLED LS T77K LEDs
 * 1x 100 Ohm 0805 Resistor
 * 1x 1M Ohm 0805 Resistor
-* 1uF 0805 Capacitor
+* 1x 1uF 0805 Capacitor
 
 
 ## Assembly instructions
@@ -24,6 +24,7 @@ A reverse engineering themed SaintCon 2024 badge topper
 ## Flashing instructions
 > [!NOTE]
 >If you obtained the components during Saintcon the py32 is already flashed and you can skip the remainder of these steps.
+
 Required hardware & software
 - ST-Link V2 clone
 - PyOCD [https://pyocd.io/](https://pyocd.io/) installed.
