@@ -101,8 +101,9 @@ const uint16_t sineLookupTable[] = {
 0x00, 0x00, 0x01, 0x01, 0x02, 0x04, 0x05, 0x07, 0x0a, 0x0c, 0x0f, 0x12, 0x16, 0x19, 0x1d, 0x21, 0x26, 0x2b, 0x30, 0x35, 0x3b, 0x41, 0x47, 0x4d, 0x54, 0x5b, 0x62, 0x6a, 0x71, 0x79, 0x81, 0x8a,
 0x92, 0x9b, 0xa4, 0xad, 0xb7, 0xc0, 0xca, 0xd4, 0xde, 0xe8, 0xf3, 0xfd, 0x108, 0x113, 0x11e, 0x129, 0x134, 0x140, 0x14b, 0x157, 0x163, 0x16e, 0x17a, 0x186, 0x192, 0x19e, 0x1aa, 0x1b6, 0x1c3, 0x1cf, 0x1db, 0x1e7};
 
-const uint16_t saw_pat[22] = {
-  0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 999, 999, 900, 800, 700, 600, 500, 400, 300, 200, 100, 0
+const uint16_t saw_pat[42] = {
+  0, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 999, 
+  999, 950, 900, 850, 800, 750, 700, 650, 600, 550, 500, 450, 400, 350, 300, 250, 200, 150, 100, 50, 0
 };
 
 int rseed = 13;
@@ -112,20 +113,22 @@ uint16_t rand() {
 }
 
 int idx=0;
+int flame = 100;
 void APP_TIM1UpdateCallback(void)
 {
   //LL_GPIO_TogglePin(GPIOA, LL_GPIO_PIN_6);
   if (ptn == 0) {
-    LL_TIM_OC_SetCompareCH4(TIM1, sineLookupTable[(idx++*2) % 256]);
+    LL_TIM_OC_SetCompareCH4(TIM1, sineLookupTable[(idx++) % 256]);
   }
   else if (ptn == 1) {
     LL_TIM_OC_SetCompareCH4(TIM1, heart_pat[(idx++/2) % 48]);
   }
   else if (ptn == 2){
-    LL_TIM_OC_SetCompareCH4(TIM1, saw_pat[(idx++) % 22]);
+    LL_TIM_OC_SetCompareCH4(TIM1, saw_pat[(idx++) % 42]);
   }
   else if (ptn == 3){
-    LL_TIM_OC_SetCompareCH4(TIM1, 200 + (rand()%600));
+    flame = (rand()%40) + (flame * 4) / 5;
+    LL_TIM_OC_SetCompareCH4(TIM1, flame);
   }
   else {
     LL_TIM_OC_SetCompareCH4(TIM1, 0);

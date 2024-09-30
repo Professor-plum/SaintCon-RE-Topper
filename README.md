@@ -4,10 +4,14 @@ A reverse engineering themed SaintCon 2024 badge topper
 ![Topper](Images/topper.png)
 ![Back Side](Images/backside.png)
 
+
+This topper can blink the LEDs in one of four patterns that can be selected by touching the skull (captive touch)
+![Pulse](Images/led_pulse.gif) ![Heart](Images/led_heart.gif) ![Saw](Images/led_saw.gif) ![Flame](Images/led_flame.gif)
+
 ## Bill of Materials 
 * 1x PY32F002AA15M
 * 2x OSRAM TOPLED LS T77K LEDs
-* 1x 100 Ohm 0805 Resistor
+* 1x 470 Ohm 0805 Resistor
 * 1x 1M Ohm 0805 Resistor
 * 1x 1uF 0805 Capacitor
 
@@ -20,6 +24,8 @@ A reverse engineering themed SaintCon 2024 badge topper
 	- R1 is the 100 ohm resistor (101 marking) 
 	- R2 is the 1M ohm resistor (105 marking)
 4. Solder on the capacitor, orientation doesn't matter
+
+![Soldering](Images/components.jpg)
 
 ## Flashing instructions
 > [!NOTE]
