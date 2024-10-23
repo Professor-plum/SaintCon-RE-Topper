@@ -21,7 +21,7 @@ This topper can blink the LEDs in one of four patterns that can be selected by t
 2. Solder on the 2 LEDs paying attention to direction. 
 	- The black mark should be towards the bottom of the badge.
 3. Solder on the 2 resistors, orientation doesn't matter
-	- R1 is the 100 ohm resistor (101 marking) 
+	- R1 is the 470 ohm resistor (4700 marking) 
 	- R2 is the 1M ohm resistor (105 marking)
 4. Solder on the capacitor, orientation doesn't matter
 
