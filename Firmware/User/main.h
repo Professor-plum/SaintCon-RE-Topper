@@ -18,10 +18,11 @@ extern "C" {
 #include "py32f0xx_ll_tim.h"
 #include "py32f0xx_ll_utils.h"
 
-#define I2C_SLAVE_OWN_ADDR  (0x28 << 1) //40
+//#define I2C_SLAVE_OWN_ADDR  (0x28 << 1) //40
 
 void APP_ErrorHandler(void);
 void APP_TIM1UpdateCallback(void);
+void ResetI2CAddr();
 
 #ifdef __cplusplus
 }

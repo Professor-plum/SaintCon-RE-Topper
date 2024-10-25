@@ -15,6 +15,8 @@ static void APP_I2CConfig(void);
 
 int touch = 0;
 int ptn=0;
+#define PAT_COUNT 10
+
 
 #define SENSE_PIN LL_GPIO_PIN_6
 #define LOAD_PIN  LL_GPIO_PIN_7
@@ -51,6 +53,8 @@ int touch_sense() {
   return count1 + count2;
 }
 
+int ser_counter=6000;
+
 int main(void)
 {
   BSP_RCC_HSI_24MConfig();
@@ -76,20 +80,31 @@ int main(void)
     printf("tally: %d \r\n", tally);
     if (tally > 2000) {
       if (touch == 0) {
-        ptn= ((ptn + 1) % 5);
+        ptn= ((ptn + 1) % PAT_COUNT);
       }
       touch = 100;
     }
     else if (touch > 0) {
       touch--;
     }
+
+    if (ser_counter == 500) {
+      ResetI2CAddr();
+    }
+    else if (ser_counter < 500) {
+      ser_counter++;
+    }
     //LL_GPIO_TogglePin(GPIOA, LL_GPIO_PIN_1);
     //LL_mDelay(500);
   }
 }
 
-const uint16_t heart_pat[48] ={500,990,600,300,100,0,0,500,990,700,500,400,300,250,200,150,100,50,0,0,0,0,0,
+const uint16_t heart_pat[48] ={500,990,700,500,300,100,200,600,990,700,500,400,300,250,200,150,100,50,0,0,0,0,0,
   0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+
+const uint16_t triple_pat[48] = {990, 0, 990, 0, 990, 0, 0, 0, 0, 0, 0, 0};
+
+const uint16_t long_pat[2] = {990, 0};
 
 const uint16_t sineLookupTable[] = {
 0x1f4, 0x200, 0x20c, 0x218, 0x224, 0x231, 0x23d, 0x249, 0x255, 0x261, 0x26d, 0x279, 0x284, 0x290, 0x29c, 0x2a7, 0x2b3, 0x2be, 0x2c9, 0x2d4, 0x2df, 0x2ea, 0x2f4, 0x2ff, 0x309, 0x313, 0x31d, 0x327, 0x330, 0x33a, 0x343, 0x34c,
@@ -103,6 +118,11 @@ const uint16_t sineLookupTable[] = {
 
 const uint16_t saw_pat[42] = {
   0, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950, 999, 
+  999, 950, 900, 850, 800, 750, 700, 650, 600, 550, 500, 450, 400, 350, 300, 250, 200, 150, 100, 50, 0
+};
+
+const uint16_t halfsaw_pat[42] = {
+  999, 950, 900, 850, 800, 750, 700, 650, 600, 550, 500, 450, 400, 350, 300, 250, 200, 150, 100, 50, 0,
   999, 950, 900, 850, 800, 750, 700, 650, 600, 550, 500, 450, 400, 350, 300, 250, 200, 150, 100, 50, 0
 };
 
@@ -129,6 +149,21 @@ void APP_TIM1UpdateCallback(void)
   else if (ptn == 3){
     flame = (rand()%40) + (flame * 4) / 5;
     LL_TIM_OC_SetCompareCH4(TIM1, flame);
+  }
+  else if (ptn == 4){
+    LL_TIM_OC_SetCompareCH4(TIM1, triple_pat[(idx++/6) % 12]);
+  }
+  else if (ptn == 5){
+    LL_TIM_OC_SetCompareCH4(TIM1, long_pat[(idx++/16) % 2]);
+  }
+  else if (ptn == 6){
+    LL_TIM_OC_SetCompareCH4(TIM1, halfsaw_pat[(idx++) % 42]);
+  }
+  else if (ptn == 7){
+    LL_TIM_OC_SetCompareCH4(TIM1, 500);
+  }
+  else if (ptn == 8){
+    LL_TIM_OC_SetCompareCH4(TIM1, saw_pat[(idx++/4) % 42]);
   }
   else {
     LL_TIM_OC_SetCompareCH4(TIM1, 0);
@@ -166,7 +201,7 @@ static void APP_I2CConfig(void)
   */
   I2C_InitStruct.ClockSpeed      = LL_I2C_MAX_SPEED_FAST;
   I2C_InitStruct.DutyCycle       = LL_I2C_DUTYCYCLE_2;
-  I2C_InitStruct.OwnAddress1     = I2C_SLAVE_OWN_ADDR;
+  I2C_InitStruct.OwnAddress1     = 0x50 << 1;
   I2C_InitStruct.TypeAcknowledge = LL_I2C_ACK;
   LL_I2C_Init(I2C1, &I2C_InitStruct);
 
@@ -175,6 +210,14 @@ static void APP_I2CConfig(void)
   
   LL_I2C_EnableIT_EVT(I2C1); //Any event 
   //LL_I2C_EnableIT_ERR(I2C1); //Error INT
+
+  SET_BIT(I2C1->CR2, I2C_CR2_ITEVTEN | I2C_CR2_ITBUFEN);
+  
+  /* Enable clock stretching */
+  LL_I2C_EnableClockStretching(I2C1);
+
+  /* Start out ACKnowledging incoming requests */
+  LL_I2C_AcknowledgeNextData(I2C1, LL_I2C_ACK);
 }
 
 static void APP_PWMChannelConfig(void)
